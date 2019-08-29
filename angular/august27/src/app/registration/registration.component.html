@@ -1,0 +1,28 @@
+<form (ngsubmit)=onsubmit(f) #f="ngForm">
+  <table>
+    <tr><td>Name</td><td><input type="text" name="name" class="form-control" ngModel/></td></tr>
+    <tr><td>Address</td><td><input type="text" name="address" class="form-control" ngModel/></td></tr>
+    <tr><td>Date Of Birth</td><td><input type="text" name="dob" class="form-control" ngModel/></td></tr>
+    <tr><td>Gender</td><td><input type="radio" name="gender" ngModel/></td></tr>
+    <tr><td>District</td>
+    <td>
+        <select class="form-control form-control-lg">
+            <option>Alappuzha</option>
+            <option>Ernamkulam</option>
+            <option>Idukki</option>
+            <option>Malappuram</option>
+            <option>Kozhikode</option>
+            <option>Kannur</option>
+            <option>Palakkad</option>
+          </select>
+    </td>
+  </tr>
+  <tr><td>Place</td><td><input type="text" name="place" class="form-control" ngModel/></td></tr>
+  <tr><td>Mobile Number</td><td><input type="text" name="mobilenumber" class="form-control" ngModel/></td></tr>
+  <tr><td>Email id</td><td><input type="text" name="emailid" class="form-control" ngModel/>/td></tr>
+  <tr><td>Username</td><td><input type="text" name="username" class="form-control" ngModel/></td></tr>
+  <tr><td>Password</td><td><input type="password" name="password" class="form-control" ngModel/></td></tr>
+  <tr><td>Confirm Password</td><td><input type="password" name="confirmpassword" class="form-control" ngModel/></td></tr>
+  <tr><td></td><td><button type="submit" class="btn btn-warning">Register</button></td></tr>
+  </table>
+</form>
